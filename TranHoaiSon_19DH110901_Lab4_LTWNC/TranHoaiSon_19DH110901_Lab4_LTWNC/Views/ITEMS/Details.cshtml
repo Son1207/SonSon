@@ -1,0 +1,51 @@
+﻿@model TranHoaiSon_19DH110901_Lab4_LTWNC.Models.ITEM
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ITEM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ItemImageName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ItemImageName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CATEGORY.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CATEGORY.CategoryName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ItemId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
